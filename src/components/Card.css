@@ -1,0 +1,36 @@
+﻿.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  background-color: #fff;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem 1.2rem;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.card-content {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #444;
+}
+
+.card-content li {
+  margin-bottom: 0.4rem;
+}
