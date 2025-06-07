@@ -3,96 +3,88 @@ import './App.css';
 
 const sections = [
   {
-    icon: '💡',
-    title: '仕組みから動かす、現場ドリブンな実務支援',
-    content: [
-      '社内の役職が退職 → 方針・実務が宙に浮く',
-      'ナンバー2／右腕不在 → ボトルネックが集中',
-      'MD不足 → 商品計画がブラックボックス化',
-      '属人化 → 誰も仕組みを引き継げない',
-    ],
-    image: '/assets/section1.jpg',
-  },
-  {
-    icon: '✅',
-    title: 'まるっと任せられること',
-    content: [
-      '「人に依存しない」商品計画・在庫管理・販促を再構築',
-      '現場の効率動作を自動化・可視化して拡張',
-      'デザイナー／物流／店舗スタッフと接続する仕様化',
-    ],
-    image: '/assets/section2.jpg',
+    icon: '🧠',
+    title: '議事録自動化｜Whisper × Notion連携',
+    text: '音声データをWhisperで文字起こしし、GAS経由でNotionへ自動登録。日付・内容・要約を自動分類し、議事録整理の手間をゼロに。'
   },
   {
     icon: '📦',
-    title: 'ディストリビューター導入による進化',
-    content: [
-      '小ロット・客注・納品まで最小単位で運用可能',
-      '売上を取りやすい場所への戦略投入',
-      '「在庫を持たずに売る」モデルの支援',
-    ],
-    image: '/assets/section3.jpg',
+    title: '在庫分析支援｜アパレル現場対応',
+    text: '売上・在庫データ5万件超をもとに自動可視化。商品ID・SKU・店舗別の回転数・粗利を見える化し、仕入とMDの判断を高速化。'
   },
   {
-    icon: '🎯',
-    title: '我々の仕事とは？',
-    content: [
-      '「現場に合った正解」を“仕組み”に変換',
-      '誰でも再現できる業務設計へ',
-    ],
-    image: '/assets/section4.jpg',
+    icon: '📤',
+    title: 'ディストリ業務支援｜納品帳票・CSV出力自動化',
+    text: '出荷現場で使える帳票（納品書・ラベル・管理CSVなど）を、テンプレ化＋1クリックで出力。型番・数量・納品先を自動整形。'
   },
   {
-    icon: '🔑',
-    title: 'こんな企業にフィット',
-    content: [
-      '役職が辞めて現場が止まりそうなとき',
-      '属人化から抜け出したいとき',
-      '現場のノウハウを形式知化したいとき',
-      'ディストリ型で販路開拓したいとき',
-    ],
-    image: '/assets/section5.jpg',
+    icon: '🛍️',
+    title: 'POPUP運用｜SATOプリンタ × 在庫連携',
+    text: 'POPUP現場で使うSATOラベル発行、Squareとの連携、商品在庫の連動を一括管理。担当者が現場で迷わない運用設計を支援。'
   },
   {
-    icon: '🧭',
-    title: '実務の7フェーズ',
+    icon: '🔁',
+    title: '自動転送フロー｜GAS × Drive × Notion',
+    text: 'ローカルの音声データをGoogle Driveへアップロード → 自動文字起こし → GAS経由でNotionへ送信という自動パイプラインを構築。'
+  },
+  {
+    icon: '🛠️',
+    title: '業務改善ツール群｜通知・DB連携・テンプレ出力',
+    text: 'LINE通知・Googleスプレッドシート連携・帳票テンプレート自動生成など、業務を止めずに回すための業務支援ツールを開発。'
+  },
+  {
+    icon: '🔥',
+    title: '私たちのしごと｜POPUP｜ディストリビュート｜MD',
+    text: '「人手が足りない」「右腕がいない」「Excelが限界」など、現場で起きるリアルな課題に、代行＋仕組み化の両輪で支援します。'
+  },
+  {
+    icon: '💸',
+    title: '料金プラン｜POPUP〜MD設計〜仕組み化導入',
     table: [
-      ['交渉・営業', '百貨店や商業施設との出店交渉・日程調整'],
-      ['商品管理', 'SKUごとの数量・納品・補充の自動化・最適化'],
-      ['販促設計', 'VMD／CADで設計し、売場レイアウトも提案'],
-      ['準備・設営', '設営マニュアル、ポスター設置、導線確保'],
-      ['オペレーション', 'スタッフ手配・マニュアル共有・運営'],
-      ['分析・撤収', '売上・在庫回収・改善点のドキュメント化'],
-      ['成果最大化', '成果が出れば常設展開・取引拡大も視野'],
-    ],
-    image: '/assets/section6.jpg',
+      ['POPUPパッケージ（交渉・設営・VMD・撤収まで）', '¥200,000〜／1拠点'],
+      ['ディストリ構築（現場最適化・在庫連携）', '¥150,000〜／1案件'],
+      ['MDシート＋PL/BS＋数値設計', '¥120,000〜／1ブランド'],
+      ['仕組み導入（シート／CSV生成／自動化など）', '¥80,000〜／1セット'],
+    ]
   },
+  {
+    icon: '🧰',
+    title: '料金プラン｜ツール・ドキュメント自動生成・連携',
+    table: [
+      ['CSV一括生成ツール（Excel対応・シート整形）', '¥30,000〜'],
+      ['社内データ整理（クラウド連携・GASなど）', '¥50,000〜'],
+      ['ドキュメント自動生成（指示書・発注書など）', '¥40,000〜'],
+      ['LINE通知／Google連携などのカスタム支援', '¥30,000〜'],
+    ]
+  },
+  {
+    icon: '💡',
+    title: 'お困りごと別｜おすすめプラン',
+    table: [
+      ['「ナンバー2が辞めた／右腕がいない」', 'MD＋仕組み代行（¥120,000〜）'],
+      ['「現場が分かりやすい資料を作れない」', 'シート生成＆CSV自動整理（¥30,000〜）'],
+      ['「商品が作れない／売上がない」', 'ディストリ設計＆現場連携（¥150,000〜）'],
+      ['「POPUP全部まかせたい」', 'フルパッケージ（¥200,000〜）'],
+    ]
+  }
 ];
 
-export default function App() {
+function App() {
   return (
-    <main className="container">
-      <h1 className="main-title">仕組み化支援｜プレゼン資料</h1>
-      {sections.map((sec, index) => (
+    <div className="App">
+      <h1>現場と業務をつなぐ、仕組み設計のプロフェッショナル</h1>
+      <p className="subtitle">― 自動化 × 実務対応 × 保守まで任せられる ―</p>
+      {sections.map((section, index) => (
         <div className="card" key={index}>
-          <img src={sec.image} alt={sec.title} className="card-image" />
-          <h2 className="card-title">
-            {sec.icon} {sec.title}
-          </h2>
-          {sec.content && (
-            <ul className="card-content">
-              {sec.content.map((line, i) => (
-                <li key={i}>{line}</li>
-              ))}
-            </ul>
-          )}
-          {sec.table && (
-            <table className="card-table">
+          <h2>{section.icon} {section.title}</h2>
+          {section.text && <p>{section.text}</p>}
+          {section.table && (
+            <table>
               <tbody>
-                {sec.table.map(([label, desc], i) => (
+                {section.table.map((row, i) => (
                   <tr key={i}>
-                    <td className="table-label">{label}</td>
-                    <td className="table-desc">{desc}</td>
+                    <td>{row[0]}</td>
+                    <td>{row[1]}</td>
                   </tr>
                 ))}
               </tbody>
@@ -100,6 +92,8 @@ export default function App() {
           )}
         </div>
       ))}
-    </main>
+    </div>
   );
 }
+
+export default App;
